@@ -7,7 +7,7 @@ const smtpTransport = nodemailer.createTransport({
   service: 'gmail',
   host: 'smtp.gmail.com',
   auth: {
-    user: 'whiskradoptions@gmail.com',
+    user: 'pupper-services@gmail.com',
     pass: 'welovepets',
   },
 });
@@ -21,14 +21,14 @@ router.get('/', (req, res) => {
     subject: 'An Inquiry About One of Your Pets',
     html: `
       <div>
-        <h1>Greetings from Whiskr!</h1>
+        <h1>Hello from Pupper!</h1>
         <p>
-          We’re reaching out to you because one of our users has shown interest
-          in adopting a pet in your care. This letter is a courtesy our service
-          provides to connect users with potential pets, so that caregivers may
-          also ensure the best possible matches for their pets. Please review
-          the following information, and reach out to the user directly if you
-          would like to pursue further communication.
+        We’re reaching out to you because one of our users has shown interest
+        in adopting a pet in your care. This email is a courtesy our service
+        provides to connect users with potential pets, so that caregivers may
+        also ensure the best possible matches for their pets. Please review
+        the following information, and reach out to the user directly if you
+        would like to pursue further communication.
         </p>
         <h2>User Profile:</h2>
         <div>
@@ -62,10 +62,9 @@ router.get('/', (req, res) => {
         </div>
         <div>
           <p>
-            Thank you for all that you do to help these animals find their
-            furrever homes.\n Sincerely,
+          Thank you for helping these pets find a home.\n Sincerely,
           </p>
-          <div>The Whiskr Team</div>
+          <div>Pupper</div>
         </div>
       </div>
     `,
