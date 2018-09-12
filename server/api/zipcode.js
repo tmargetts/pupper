@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const axios = require('axios');
-const {
-  GOOGLE_GEO_API_KEY
-} = require('../../secrets');   // comment out for deployment?
+// const {
+//   GOOGLE_GEO_API_KEY
+// } = require('../../secrets');   // comment out for deployment?
 
 module.exports = router;
 
